@@ -4,11 +4,16 @@ Hi，我是 Carl
 
 一个喜欢折腾的人
 
-
+<iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://img.shields.io/youtube/channel/views/UCLY6gSsEwswCrDaFV__K1uw?style=social">
+                    </iframe>
 
 ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCLY6gSsEwswCrDaFV__K1uw?style=social)
 
 
+<p class="copyright text-muted"> https://img.shields.io/youtube/channel/views/UCLY6gSsEwswCrDaFV__K1uw?style=social
+</p>
 
 
 [我的观影记录](https://carlcit.github.io/2021/01/11/my-movie/)
