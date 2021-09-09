@@ -4,6 +4,7 @@ Hi，我是 Carl
 
 一个喜欢折腾的人
 
+YouTube 频道观看次数
 <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
     height="20px"
     src="https://img.shields.io/youtube/channel/views/UCLY6gSsEwswCrDaFV__K1uw?style=social"
@@ -13,6 +14,16 @@ Hi，我是 Carl
 ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCLY6gSsEwswCrDaFV__K1uw?style=social)
 
 
+YouTube 频道订阅人数
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCctxtvu9G4AfYFabLWinYDg?style=social)
+
+
+Twitter 账户
+![Twitter URL](https://img.shields.io/twitter/url?style=social&url=carlsonglin)
+
+
+GitHub followers
+![GitHub followers](https://img.shields.io/github/followers/CarlCit?style=social)
 
 
 [我的观影记录](https://carlcit.github.io/2021/01/11/my-movie/)
