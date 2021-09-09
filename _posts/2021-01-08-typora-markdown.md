@@ -429,3 +429,872 @@ X^2^
 你可以[在这里](https://support.typora.io/HTML/)找到更多细节。
 
 1. 这里是*文本*的的**注脚**。
+
+
+
+
+
+
+
+
+
+##  一、Markdown
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#简介)简介
+
+![logo](https://raw.githubusercontent.com/xugaoyi/image_store/master/blog/md_logo.png)
+
+`Markdown` 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#应用)应用
+
+当前许多网站都广泛使用 `Markdown` 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、知乎等
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#编辑器)编辑器
+
+推荐使用`Typora`，官网：https://typora.io/
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#二、徽章)二、徽章
+
+#### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#什么是徽章)什么是徽章
+
+徽章是一种小巧精美的小图标，一般配有相关文字进行辅助说明，可对数据进行监控，链接跳转等，富有表现力。
+
+常见于`github`项目主页，但其不仅出现于 `github` 项目主页，凡是能够表现图片的地方都可以出现徽章。
+
+#### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#徽章的使用)徽章的使用
+
+- 在`markdown`中使用
+
+```markdown
+格式:
+[![图片文字说明](图片源地址)](超链接地址)  # 即超链接内部嵌套图片
+
+语法：
+[![github](https://img.shields.io/badge/github-xugaoyi-brightgreen.svg)](https://github.com/xugaoyi)
+```
+
+
+
+[![github](https://img.shields.io/badge/github-xugaoyi-brightgreen.svg)](https://github.com/xugaoyi)
+
+徽章生成网站：https://shields.io/
+
+本文档主要介绍markdown，不对徽章做过多介绍，详细介绍请 [戳我 ](https://segmentfault.com/a/1190000019552597) 了解。
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#三、设置目录)三、设置目录
+
+设置之后会根据分级标题来自动生成目录。
+
+```markdown
+[TOC]
+```
+
+
+
+> 注：github暂未支持。
+
+[TOC]
+
+在github生成TOC的方法：https://github.com/ekalinin/github-markdown-toc
+
+windows系统需要基于golang实现的工具：https://github.com/ekalinin/github-markdown-toc.go
+
+> 如果你有GO语言的编译环境，可以尝试自己编译，如果没有，可以直接下载编译好的二进制文件。
+>
+> 如windows系统64位 下载：gh-md-toc.windows.amd64.tgz （386 是32位，amd64是64位）
+>
+> 下载解压后，发现没有后缀名无法识别，实际上这是个exe文件，所以只需要暴力地在后面加上.exe就可以开始愉快使用了。
+>
+> 使用方法：
+>
+> 1. 首先将.md文档复制到gh-md-toc.exe的根目录下
+> 2. 在该目录下打开系统命令行，输入命令：gh-md-toc.exe README.MD 生成目录
+> 3. 把生成的目录复制到.md文件即可。
+
+**这是gh-md-toc生成的目录：**
+
+- 一、Markdown
+  - [简介](https://blog.kimen.com.cn/pages/ad247c4332211551/#简介)
+  - [应用](https://blog.kimen.com.cn/pages/ad247c4332211551/#应用)
+  - [编辑器](https://blog.kimen.com.cn/pages/ad247c4332211551/#编辑器)
+- 二、徽章
+  - [什么是徽章](https://blog.kimen.com.cn/pages/ad247c4332211551/#什么是徽章)
+  - [徽章的使用](https://blog.kimen.com.cn/pages/ad247c4332211551/#徽章的使用)
+- [三、设置目录](https://blog.kimen.com.cn/pages/ad247c4332211551/#三设置目录)
+- [四、标题](https://blog.kimen.com.cn/pages/ad247c4332211551/#四标题)
+- 一级标题
+  - 二级标题
+    - 三级标题
+      - 四级标题
+        - 五级标题
+          - [六级标题](https://blog.kimen.com.cn/pages/ad247c4332211551/#六级标题)
+  - 五、文本
+    - [段落](https://blog.kimen.com.cn/pages/ad247c4332211551/#段落)
+    - [字体](https://blog.kimen.com.cn/pages/ad247c4332211551/#字体)
+    - [删除线](https://blog.kimen.com.cn/pages/ad247c4332211551/#删除线)
+    - [下划线](https://blog.kimen.com.cn/pages/ad247c4332211551/#下划线)
+    - [文字高亮](https://blog.kimen.com.cn/pages/ad247c4332211551/#文字高亮)
+    - [分隔线](https://blog.kimen.com.cn/pages/ad247c4332211551/#分隔线)
+    - [脚注](https://blog.kimen.com.cn/pages/ad247c4332211551/#脚注)
+  - 六、列表
+    - [无序列表](https://blog.kimen.com.cn/pages/ad247c4332211551/#无序列表)
+    - [有序列表](https://blog.kimen.com.cn/pages/ad247c4332211551/#有序列表)
+    - [折叠列表](https://blog.kimen.com.cn/pages/ad247c4332211551/#折叠列表)
+    - [带复选框列表](https://blog.kimen.com.cn/pages/ad247c4332211551/#带复选框列表)
+    - [列表嵌套](https://blog.kimen.com.cn/pages/ad247c4332211551/#列表嵌套)
+  - 七、区块引用
+    - [区块嵌套](https://blog.kimen.com.cn/pages/ad247c4332211551/#区块嵌套)
+    - [区块中使用列表](https://blog.kimen.com.cn/pages/ad247c4332211551/#区块中使用列表)
+    - [列表中使用区块](https://blog.kimen.com.cn/pages/ad247c4332211551/#列表中使用区块)
+  - 八、代码
+    - [代码区块](https://blog.kimen.com.cn/pages/ad247c4332211551/#代码区块)
+  - 九、链接
+    - [变量链接](https://blog.kimen.com.cn/pages/ad247c4332211551/#变量链接)
+    - [Github中使用内部链接](https://blog.kimen.com.cn/pages/ad247c4332211551/#github中使用内部链接)
+    - [锚点链接](https://blog.kimen.com.cn/pages/ad247c4332211551/#锚点链接)
+  - 十、图片
+    - [图片宽高](https://blog.kimen.com.cn/pages/ad247c4332211551/#图片宽高)
+    - [相对路径以及Github中使用图片](https://blog.kimen.com.cn/pages/ad247c4332211551/#相对路径以及github中使用图片)
+  - [十一、表格](https://blog.kimen.com.cn/pages/ad247c4332211551/#十一表格)
+  - [十二、Emoji表情包](https://blog.kimen.com.cn/pages/ad247c4332211551/#十二emoji表情包)
+  - 十三、其他技巧
+    - [支持的 HTML 元素](https://blog.kimen.com.cn/pages/ad247c4332211551/#支持的-html-元素)
+    - [转义](https://blog.kimen.com.cn/pages/ad247c4332211551/#转义)
+    - [数学公式](https://blog.kimen.com.cn/pages/ad247c4332211551/#数学公式)
+    - [图表](https://blog.kimen.com.cn/pages/ad247c4332211551/#图表)
+    - [流程图](https://blog.kimen.com.cn/pages/ad247c4332211551/#流程图)
+    - [时序图](https://blog.kimen.com.cn/pages/ad247c4332211551/#时序图)
+    - [甘特图](https://blog.kimen.com.cn/pages/ad247c4332211551/#甘特图)
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#四、标题)四、标题
+
+```markdown
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+```
+
+
+
+
+# [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#一级标题)一级标题
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#二级标题)二级标题
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#三级标题)三级标题
+
+#### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#四级标题)四级标题
+
+##### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#五级标题)五级标题
+
+###### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#六级标题)六级标题
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#五、文本)五、文本
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#段落)段落
+
+Markdown 段落没有特殊的格式，直接编写文字，**需要段落缩进时使用2个Tab**
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#字体)字体
+
+```markdown
+*斜体文本* 
+或 _斜体文本_
+**粗体文本**
+或  __粗体文本__
+***粗斜体文本***
+或 ___粗斜体文本___
+```
+
+
+
+*斜体文本*
+
+*斜体文本*
+
+**粗体文本**
+
+**粗体文本**
+
+***粗斜体文本***
+
+***粗斜体文本***
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#删除线)删除线
+
+如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 **~~** 即可，实例如下：
+
+```markdown
+~~BAIDU.COM~~
+```
+
+BAIDU.COM
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#下划线)下划线
+
+下划线可以通过 HTML 的`<u>` 标签来实现：
+
+```markdown
+<u>带下划线的文本</u>
+```
+
+
+
+带下划线的文本
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#文字高亮)文字高亮
+
+文字高亮能使行内部分文字高亮，使用一对反引号。
+
+```markdown
+`html` `css` `javascript` 
+```
+
+
+
+```
+html` `css` `javascript
+```
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#分隔线)分隔线
+
+你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
+
+```markdown
+***
+
+*****
+
+- - -
+
+----------
+```
+
+
+
+------
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#脚注)脚注
+
+脚注是对文本的补充说明。
+
+```markdown
+[^变量]
+在文档结尾或其他位置給变量赋值：
+[^变量]: 注明框内显示的内容
+
+鼠标移到这里> [^哈喽]
+[^哈喽]: 注明框内显示的内容
+```
+
+
+
+> 注：在部分线上预览未支持
+
+鼠标移到这里> [^哈喽](https://blog.kimen.com.cn/pages/ad247c4332211551/注明框内显示的内容)
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#六、列表)六、列表
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#无序列表)无序列表
+
+使用星号`*`、加号`+`或是减号`-`作为列表标记：
+
+```markdown
+* 第一项
+* 第二项
+
++ 第一项
++ 第二项
+
+- 第一项
+- 第二项
+```
+
+
+
+- 第一项
+- 第二项
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#有序列表)有序列表
+
+使用数字并加上`.` 号来表示
+
+```markdown
+1. 第一项
+2. 第二项
+```
+
+
+
+1. 第一项
+2. 第二项
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#折叠列表)折叠列表
+
+```markdown
+<details>
+<summary>点我打开关闭折叠</summary>
+ 折叠内容
+ <ul>
+     <li>1</li>
+     <li>2</li>
+     <li>3</li>
+ </ul>
+</details>
+```
+
+
+
+> 注意：<details> 标签内写markdown代码无效，可写html代码，如ul>li、table等
+
+<details style="color: rgb(0, 50, 60); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><summary>点我打开关闭折叠</summary></details>
+
+<details style="color: rgb(0, 50, 60); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><summary>包含table的折叠</summary></details>
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#带复选框列表)带复选框列表
+
+```markdown
+* [x] 第一项
+* [ ] 第二项
+* [ ] 第三项
+```
+
+
+
+> 注：在部分线上预览未支持
+
+- [x] 第一项
+- [ ] 第二项
+- [ ] 第三项
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#列表嵌套)列表嵌套
+
+```markdown
+1. 第一项：
+    - 第一项嵌套的第一个元素
+    - 第一项嵌套的第二个元素
+2. 第二项：
+    - 第二项嵌套的第一个元素
+       - 第三层嵌套
+```
+
+
+
+1. 第一项
+   - 嵌套1
+   - 嵌套2
+2. 第二项
+   - 嵌套1
+     - 嵌套2
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#七、区块引用)七、区块引用
+
+区块引用是在段落开头使用 `>`符号 ，然后后面紧跟一个**空格**符号：
+
+```markdown
+> 区块引用
+```
+
+
+
+> 区块引用
+>
+> Typora中回车键自动延伸区块
+
+#### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#区块嵌套)区块嵌套
+
+```markdown
+> 第一层
+> > 第二层
+> > > 第三层
+```
+
+
+
+> 第一层
+>
+> > 第二层
+> >
+> > > 第三层
+
+#### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#区块中使用列表)区块中使用列表
+
+```markdown
+> 区块中使用列表
+> 1. 第一项
+> 2. 第二项
+> * 111
+> * 222
+```
+
+
+
+> 区块中使用列表
+>
+> 1. 第一项
+> 2. 第二项
+>    - 111
+>    - 222
+
+#### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#列表中使用区块)列表中使用区块
+
+```markdown
+* 第一项
+    > 区块
+* 第二项
+```
+
+
+
+- 第一项
+
+  > 区块
+  >
+  > 区块
+
+- 第二项
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#八、代码)八、代码
+
+如果是段落上的一个代码片段可以用反引号把它包起来（**`**），示例：
+
+```markdown
+`alert()` 
+```
+
+
+
+```
+alert()
+```
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#代码区块)代码区块
+
+用三个反引号 **```** 包裹一段代码，并指定一种语言（也可以不指定），指定代码语言后会有代码的颜色高亮
+
+本代码区块为示例说明：
+
+~~~markdown
+```javascript
+function test() {
+	alert('test')
+}
+```
+~~~
+
+
+
+效果：
+
+```javascript
+function test() {
+	alert('test')
+}
+```
+
+
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#九、链接)九、链接
+
+格式：
+
+```markdown
+[链接名称](链接地址)
+
+[链接名称](链接地址,可选的alt)
+
+或
+
+<链接地址>
+```
+
+
+
+示例：
+
+```markdown
+[百度](http://www.baidu.com,'百度')
+```
+
+
+
+[百度](http://www.baidu.xn--com%2C''-p19wu55v/)
+
+直接显示链接地址：
+
+```markdown
+<http://www.baidu.com>
+```
+
+
+
+[http://www.baidu.com](http://www.baidu.com/)
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#变量链接)变量链接
+
+链接可以用变量来代替，文档末尾或其他位置附带变量地址：
+
+```markdown
+这个链接用 1 作为网址变量 [Google][1]
+这个链接用 baidu 作为网址变量 [Baidu][baidu]
+
+然后在文档的结尾或其他位置给变量赋值（网址）
+  [1]: http://www.google.com/
+  [baidu]: http://www.baidu.com/
+```
+
+
+
+这个链接用 1 作为网址变量 [Google](http://www.google.com/)
+
+这个链接用 baidu 作为网址变量 [Baidu](http://www.baidu.com/)
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#github仓库中使用内部链接)Github仓库中使用内部链接
+
+```markdown
+可使用相对路径（前提是有该路径下的文件）
+[test](test.md)
+```
+
+
+
+[test](https://blog.kimen.com.cn/03.技术/01.技术文档/md-img/test.html)
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#锚点链接)锚点链接
+
+本文件中每一个标题都是一个锚点，和HTML的锚点（`#`）类似
+
+```markdown
+[Markdown](#Markdown)
+```
+
+
+
+> 注： github对含有标点符号的标题进行锚点时会忽略掉标点符号， 本页中，如果这样写则无法跳转：[链接](#九、链接) 正确写法：[链接](#九链接)
+
+[Markdown](https://blog.kimen.com.cn/pages/ad247c4332211551/#一Markdown)
+
+[链接](https://blog.kimen.com.cn/pages/ad247c4332211551/#九链接)
+
+[流程图](https://blog.kimen.com.cn/pages/ad247c4332211551/#流程图)
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#十、图片)十、图片
+
+和链接的区别是前面多一个感叹号`!`
+
+```markdown
+![图片名](图片链接)
+```
+
+
+
+当然，你也可以像链接那样对图片地址使用变量:
+
+```markdown
+这里链接用 img 作为图片地址变量 
+然后在文档的结尾或其他位置给变量赋值（图片地址）
+![RUNOOB][img]
+[img]: https://raw.githubusercontent.com/xugaoyi/image_store/master/blog/md_logo.png
+```
+
+
+
+![RUNOOB](https://raw.githubusercontent.com/xugaoyi/image_store/master/blog/md_logo.png)
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#图片宽高)图片宽高
+
+如下想设置图片宽高，可以使用 `<img>` 标签。
+
+```html
+<img src="https://raw.githubusercontent.com/xugaoyi/image_store/master/blog/md_logo.png" width="50px" height="30px">
+```
+
+
+
+![img](https://raw.githubusercontent.com/xugaoyi/image_store/master/blog/md_logo.png)
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#相对路径以及github中使用图片)相对路径以及Github中使用图片
+
+不管是在本地还是在github同一个仓库中，如果图片存在，可以使用**相对路径**。
+
+相对路径图片：
+
+```markdown
+![头像图片](./md-img/test.jpg)
+```
+
+github上如果引用其他github仓库中的图片则要注意地址格式：`仓库地址/raw/分支名/图片路径` 或 `https://raw.githubusercontent.com/用户名/仓库名/分支名/图片路径`
+
+```markdown
+![其他仓库的图片1](https://github.com/xugaoyi/vue-music/raw/master/src/common/image/default.png)
+或
+![其他仓库的图片2](https://raw.githubusercontent.com/xugaoyi/image_store/master/blog/md_logo.png)
+```
+
+
+
+![其他仓库的图片](https://github.com/xugaoyi/vue-music/raw/master/src/common/image/default.png)
+
+![其他仓库的图片2](https://raw.githubusercontent.com/xugaoyi/image_store/master/blog/md_logo.png)
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#十一、表格)十一、表格
+
+制作表格使用 `|`来分隔不同的单元格，使用`-`来分隔表头和其他行。
+
+```markdown
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+```
+
+
+
+|  表头  |  表头  |
+| :----: | :----: |
+| 单元格 | 单元格 |
+| 单元格 | 单元格 |
+
+
+
+**对齐方式**
+
+- **-:** 设置内容和标题栏居右对齐
+- **:-** 设置内容和标题栏居左对齐
+- **:-:** 设置内容和标题栏居中对齐
+
+```markdown
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+```
+
+
+
+| 左对齐 | 右对齐 | 居中对齐 |
+| :----- | -----: | :------: |
+| 单元格 | 单元格 |  单元格  |
+| 单元格 | 单元格 |  单元格  |
+
+
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#十二、emoji表情包)十二、Emoji表情包
+
+Emoji表情英文名的前后加冒号，Typore上先输入冒号再输入首字母有表情提示
+
+```markdown
+:smirk:
+```
+
+💋 😸🙈🐴 😏😊😃😄 ☀️
+
+更多表情名称请查看：[表情包清单](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
+## [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#十三、其他技巧)十三、其他技巧
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#支持的-html-元素)支持的 HTML 元素
+
+不在 Markdown 语法涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。
+
+目前支持的 HTML 元素有：`<kbd> <b> <i> <em> <sup> <sub> <br>`等等 ，如：
+
+```markdown
+使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+```
+
+使用 Ctrl+Alt+Del 重启电脑
+
+**我是使用b标签的加粗字体**
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#转义)转义
+
+Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用反斜杠转义字符：
+
+```markdown
+**未转义星号显示加粗** 
+\*\* 转义显示星号 \*\*
+```
+
+
+
+**未转义星号显示加粗** ** 转义显示星号 **
+
+Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
+
+```markdown
+\   反斜线
+`   反引号
+*   星号
+_   下划线
+{}  花括号
+[]  方括号
+()  小括号
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   感叹号
+```
+
+
+
+------
+
+*** **以下部分在Github或其他在线预览中暂未支持** ***
+
+------
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#数学公式)数学公式
+
+当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。提交后，问答和文章页会根据需要加载 Mathjax 对数学公式进行渲染。如：
+
+```markdown
+$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
+\end{vmatrix}
+$$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}
+$$
+```
+
+
+
+$$ \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \ \frac{\partial X}{\partial u} & \frac{\partial Y}{\partial u} & 0 \ \frac{\partial X}{\partial v} & \frac{\partial Y}{\partial v} & 0 \ \end{vmatrix} $$
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#图表)图表
+
+~~~markdown
+```chart
+,Budget,Income,Expenses,Debt
+June,5000,8000,4000,6000
+July,3000,1000,4000,3000
+Aug,5000,7000,6000,3000
+Sep,7000,2000,3000,1000
+Oct,6000,5000,4000,2000
+Nov,4000,3000,5000,
+
+type: pie
+title: Monthly Revenue
+x.title: Amount
+y.title: Month
+y.suffix: $
+```
+```mermaid
+sequenceDiagram
+A->>B: 是否已收到消息？
+B-->>A: 已收到消息
+```
+~~~
+
+
+
+> 注：在Typora中未支持
+
+```text
+,Budget,Income,Expenses,Debt
+June,5000,8000,4000,6000
+July,3000,1000,4000,3000
+Aug,5000,7000,6000,3000
+Sep,7000,2000,3000,1000
+Oct,6000,5000,4000,2000
+Nov,4000,3000,5000,
+
+type: pie
+title: Monthly Revenue
+x.title: Amount
+y.title: Month
+y.suffix: $
+```
+
+
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#流程图)流程图
+
+~~~markdown
+语法：
+```mermaid
+graph TD
+A[模块A] -->|A1| B(模块B)
+B --> C{判断条件C}
+C -->|条件C1| D[模块D]
+C -->|条件C2| E[模块E]
+C -->|条件C3| F[模块F]
+```
+~~~
+
+
+
+流程图相关文章：
+
+https://www.jianshu.com/p/b421cc723da5
+
+http://www.imooc.com/article/292708
+
+```text
+graph TD
+A[模块A] -->|A1| B(模块B)
+B --> C{判断条件C}
+C -->|条件C1| D[模块D]
+C -->|条件C2| E[模块E]
+C -->|条件C3| F[模块F]
+```
+
+
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#时序图)时序图
+
+~~~markdown
+```mermaid
+sequenceDiagram
+A->>B: 是否已收到消息？
+B-->>A: 已收到消息
+```
+~~~
+
+
+
+```text
+sequenceDiagram
+A->>B: 是否已收到消息？
+B-->>A: 已收到消息
+```
+
+
+
+### [#](https://blog.kimen.com.cn/pages/ad247c4332211551/#甘特图)甘特图
+
+~~~markdown
+```mermaid
+gantt
+title 甘特图
+dateFormat  YYYY-MM-DD
+section 项目A
+任务1           :a1, 2018-06-06, 30d
+任务2     :after a1  , 20d
+section 项目B
+任务3      :2018-06-12  , 12d
+任务4      : 24d
+```
+~~~
+
+
+
+```text
+gantt
+title 甘特图
+dateFormat  YYYY-MM-DD
+section 项目A
+任务1           :a1, 2018-06-06, 30d
+任务2     :after a1  , 20d
+section 项目B
+任务3      :2018-06-12  , 12d
+任务4      : 24d
+```
+
