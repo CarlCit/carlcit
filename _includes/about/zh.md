@@ -11,15 +11,13 @@ YouTube 频道观看次数
     src="https://img.shields.io/youtube/channel/views/UCLY6gSsEwswCrDaFV__K1uw?style=social">
 </iframe>
 
-![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCLY6gSsEwswCrDaFV__K1uw?style=social)
-
 
 YouTube 频道订阅人数
-![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCctxtvu9G4AfYFabLWinYDg?style=social)
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCLY6gSsEwswCrDaFV__K1uw?style=social)
 
 
 Twitter 账户
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=carlsonglin)
+![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fcarlsonglin)
 
 
 GitHub followers
