@@ -4,11 +4,9 @@ Hi，我是 Carl
 
 一个喜欢折腾的人
 
-![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCctxtvu9G4AfYFabLWinYDg?style=social)
 
 
-
-![YouTube Channel Views](https://img.shields.io/youtube/channel/views/:UCctxtvu9G4AfYFabLWinYDg?style=social)
+![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCLY6gSsEwswCrDaFV__K1uw?style=social)
 
 
 
